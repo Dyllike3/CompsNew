@@ -23,7 +23,7 @@ public class EnemyDamager : MonoBehaviour
         {
             if (collision.CompareTag("Enemy"))
             {
-                print("Zone Weapon Take Damage On Enemy");
+                //print("Zone Weapon Take Damage On Enemy");
                 enemiesInRange.Add(collision.GetComponent<EnemyController>());
 
             }
@@ -32,7 +32,7 @@ public class EnemyDamager : MonoBehaviour
         {
             if (collision.CompareTag("Enemy"))
             {
-                print("Take Damage On Enemy");
+                //print("Take Damage On Enemy");
                 collision.GetComponent<EnemyController>().TakeDamage(damageAmount, shouldKnockback);
 
                 if (destroyOnContact)
